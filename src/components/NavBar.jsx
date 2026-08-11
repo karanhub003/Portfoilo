@@ -5,7 +5,7 @@ import '../index.css'
 
 export const NavBar = () => {
   return (
-    <div  className='NavBar  flex justify-between items-center max-w-full  lg:h-20 h-15  px-3.5 bg-slate-900 font-semibold font-[Poppins]    ' >
+    <div  className='NavBar  flex justify-between items-center w-7xl mx-auto  lg:h-20 h-15 font-semibold font-[Poppins]    ' >
     <div className='NavItemBox w-10 h-10 lg:w-15 lg:h-15 md:w-12 md:h-12'>
     <img src={logo} alt="logo" class="w-max" />
     </div>

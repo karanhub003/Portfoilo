@@ -11,8 +11,8 @@ export const HeroSection = () => {
       className="HeroSection font-[Inter] min-h-[90vh] relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      <div className=" max-w-7xl mx-auto px-6 lg:px-10 min-h-[90vh] flex items-center justify-between gap-20 ">
-        <div className="max-w-xl">
+      <div className=" max-w-7xl mx-auto min-h-[90vh] flex items-center justify-between gap-12 ">
+        <div className="w-[60%]">
           <p className="text-xl pb-5 text-slate-300">Hi, I'm</p>
           <p className="text-6xl pb-3 text-white leading-tight font-bold tracking-tight">
             Karan Singh
@@ -66,9 +66,7 @@ hover:text-blue-400"
               Download CV
             </button>
           </div>
-          <div
-            className="SocialIconContainer  flex gap-10 "
-          >
+          <div className="SocialIconContainer  flex gap-10 ">
             <img
               className="w-7 bg-white rounded-full   cursor-pointer hover:scale-110
 hover:bg-blue-400
@@ -96,8 +94,8 @@ duration-300"
           </div>
         </div>
 
-        <div className="w-full max-w-xl">
-          <img className="w-full" src={me} alt="me-pic" />
+        <div className="w-[40%] flex">
+         <img className="profileImage w-full" src={me} alt="me-pic" />
         </div>
       </div>
     </section>
