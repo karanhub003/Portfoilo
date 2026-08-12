@@ -3,11 +3,11 @@ import logo from "../assets/logo.png"
 import icon from "../assets/icon.png"
 import '../index.css'
 
-export const NavBar = () => {
+export default function NavBar  () {
   return (
-    <div  className='NavBar  flex justify-between items-center w-7xl mx-auto  lg:h-20 h-15 font-semibold font-[Poppins]    ' >
+    <div  className='NavBar  flex justify-between items-center w-345 mx-auto  lg:h-20 h-15 font-semibold font-[Poppins]    ' >
     <div className='NavItemBox w-10 h-10 lg:w-15 lg:h-15 md:w-12 md:h-12'>
-    <img src={logo} alt="logo" class="w-max" />
+    <img src={logo} alt="logo" className="w-max" />
     </div>
     <div className='NavItemBox hidden  sm:flex gap-3 md:gap-8 sm:gap-4 justify-center items-center text-slate-300 cursor-pointer lg:py-4 lg:px-10  '>
        <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1 '><p>Home</p></div>

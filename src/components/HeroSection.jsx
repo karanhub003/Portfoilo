@@ -5,13 +5,13 @@ import git from "../assets/git.png";
 import email from "../assets/email.png";
 import linkdin from "../assets/linkdin.png";
 
-export const HeroSection = () => {
+export default function HeroSection (){
   return (
     <section
       className="HeroSection font-[Inter] min-h-[90vh] relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      <div className=" max-w-7xl mx-auto min-h-[90vh] flex items-center justify-between gap-12 ">
+      <div className=" max-w-345 mx-auto min-h-[90vh] flex items-center justify-between gap-12 ">
         <div className="w-[60%]">
           <p className="text-xl pb-5 text-slate-300">Hi, I'm</p>
           <p className="text-6xl pb-3 text-white leading-tight font-bold tracking-tight">

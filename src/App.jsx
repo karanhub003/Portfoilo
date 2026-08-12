@@ -1,8 +1,10 @@
 import React from "react";
-import { NavBar } from "./components/NavBar";
-import { HeroSection } from "./components/HeroSection";
+import NavBar  from "./components/NavBar";
+import  HeroSection  from "./components/HeroSection";
 import "./index.css";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+
 
 export const App = () => {
   return (
@@ -13,6 +15,7 @@ export const App = () => {
       <main>
         <HeroSection />
         <AboutMe />
+        <Skills/>
       </main>
       <footer></footer>
     </>
