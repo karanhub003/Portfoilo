@@ -4,6 +4,8 @@ import  HeroSection  from "./components/HeroSection";
 import "./index.css";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 
 export const App = () => {
@@ -16,6 +18,8 @@ export const App = () => {
         <HeroSection />
         <AboutMe />
         <Skills/>
+        <Experience/>
+        <Projects/>
       </main>
       <footer></footer>
     </>

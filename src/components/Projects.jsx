@@ -1,0 +1,37 @@
+import React from "react";
+import { projects } from "../data/projects.js";
+import ProjectsCard from "./ProjectsCard.jsx";
+
+export default function Projects() {
+  return (
+    <section className="projectsSection w-full bg-slate-50 py-12">
+      <div className="ProjectOuterContainer w-345 mx-auto">
+        <div className="experienceHeadingInfoContainer flex flex-col items-center mb-4">
+          {" "}
+          <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
+            Projects
+          </h2>
+          <div className="text-center">
+            {" "}
+            <p className="text-[18px] text-slate-600">
+              A showcase of my recent work. Each project is built with
+            </p>
+            <p className="text-[18px] text-slate-600">
+              passion, focusing on clean code, performance and great user experience.
+            </p>
+          </div>
+        </div>
+        <div className="projectsCategoriesContainer flex justify-center gap-16 text-slate-600 ">
+          <div>All</div>
+          <div>Frontend</div>
+          <div>Full Stack</div>
+        </div>
+        <div className="projectsWrappersContainer flex border flex-wrap justify-around gap-y-4 p-2  ">
+          {projects.map((project) => (
+            <ProjectsCard key={project.id} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
