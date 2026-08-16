@@ -22,11 +22,11 @@ export default function Projects() {
           </div>
         </div>
         <div className="projectsCategoriesContainer flex justify-center gap-16 text-slate-600 ">
-          <div>All</div>
-          <div>Frontend</div>
-          <div>Full Stack</div>
+          <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white ">All</div>
+          <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">Frontend</div>
+          <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">Full Stack</div>
         </div>
-        <div className="projectsWrappersContainer flex border flex-wrap justify-around gap-y-4 p-2  ">
+        <div className="projectsWrappersContainer flex  flex-wrap justify-around gap-y-9 ">
           {projects.map((project) => (
             <ProjectsCard key={project.id} project={project} />
           ))}
