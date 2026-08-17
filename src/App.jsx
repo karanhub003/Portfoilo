@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 
 export const App = () => {
@@ -20,6 +21,7 @@ export const App = () => {
         <Skills/>
         <Experience/>
         <Projects/>
+        <ContactMe/>
       </main>
       <footer></footer>
     </>
