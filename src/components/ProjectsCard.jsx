@@ -5,7 +5,15 @@ import githubImg from "../assets/git.png";
 export default function ProjectsCard({ project }) {
   console.log(project);
   return (
-    <div className="projectCardContainer flex flex-col w-[30.5%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl ">
+    <div
+      className="projectCardContainer flex flex-col w-[30.5%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white
+rounded-3xl
+transition-all
+duration-300
+hover:-translate-y-3
+hover:shadow-2xl
+cursor-pointer "
+    >
       <div className="projectInfoBox  p-2.5 flex flex-col gap-1.5">
         {" "}
         <div className="projectImg  rounded-tr-xl rounded-tl-xl overflow-hidden">
@@ -22,7 +30,11 @@ export default function ProjectsCard({ project }) {
       <div className="liveLinksBox flex border-t border-slate-50 p-2.5 justify-between bg-slate-100 rounded-br-xl rounded-bl-xl ">
         <div className="liveLinkContainer flex items-center gap-1">
           <img className="w-4 h-4" src={linkImg} alt="" />
-          <a className="text-blue-600 font-medium" href={project.liveLink} target="_blank">
+          <a
+            className="text-blue-600 font-medium"
+            href={project.liveLink}
+            target="_blank"
+          >
             Live Demo
           </a>
         </div>
