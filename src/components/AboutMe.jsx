@@ -9,7 +9,7 @@ export default function AboutMe() {
       initial={{opacity:0,y:50}}
       whileInView={{opacity:1,y:0}}
       transition={{duration:0.7,ease:easeOut }}
-      viewport={{once:false}}
+      viewport={{once:true}}
     
     className=" w-full bg-white py-24 ">
       <div className="aboutMe  flex xl:w-345 xl:mx-auto gap-8.5">

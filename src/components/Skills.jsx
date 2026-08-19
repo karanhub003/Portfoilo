@@ -1,4 +1,4 @@
-import { motion, stagger } from "motion/react";
+import { easeOut, motion, stagger } from "motion/react";
 import { skills } from "../data/skills.js";
 import SkillsBadge from "./SkillsBadge.jsx";
 
@@ -9,10 +9,9 @@ export default function Skills() {
     hidden: {},
     visible: {
       transition: {
-        ease:"easeOut",
+        ease: "easeOut",
         staggerChildren: 0.08,
       },
-      
     },
   };
 
@@ -38,14 +37,13 @@ export default function Skills() {
           <h2 className=" text-4xl text-slate-900 font-medium underline decoration-blue-500 text-center  mb-10">
             Skills
           </h2>
-          <motion.div 
-          variants={container}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{once:true,amount:0.2}}
-        
-          
-          className="skillInnerContainer  flex justify-between px-10">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="skillInnerContainer  flex justify-between px-10"
+          >
             {categories.map((category) => (
               <motion.div
                 variants={item}
