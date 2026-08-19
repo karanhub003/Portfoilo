@@ -4,7 +4,7 @@ import profileImage from "../assets/me.png"
 export default function AboutMe() {
   return (
     <section className=" w-full bg-white py-24 ">
-      <div className="aboutMe  flex w-345 mx-auto gap-[34px]">
+      <div className="aboutMe  flex w-345 mx-auto gap-8.5">
       <div className="aboutMeProfileContainer  p-2 w-[25%]">
         <div className="profileImageFrame border-blue-100  rounded-2xl overflow-hidden bg-blue-50 shadow-lg"><img className="pl-1.5" src={profileImage} alt="profileImg" /></div>
       </div>
@@ -14,25 +14,25 @@ export default function AboutMe() {
           I'm a frontend developer with hands-on experience building responsive websites and web applications using React, JavaScript, and Tailwind CSS. I enjoy creating clean interfaces, reusable components, and intuitive user experiences with a strong focus on performance and responsiveness.
         </p>
         <div className="highlightContainers flex  gap-15  py-2">
-          <div className="highlightInfo border-slate-200 w-[140px] py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="highlightInfo border-slate-200 w-35 py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <div className="icon text-blue-500 ">
              <i className="fa-regular fa-calendar-days"></i>
             </div>
             <p>8+ Months Experiences</p>
           </div>
-          <div className="highlightInfo  border-slate-200 w-[140px] py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="highlightInfo  border-slate-200 w-35 py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <div className="icon  text-blue-500">
              <i className="fa-solid fa-code"></i>
             </div>
             <p>10+ Projects</p>
           </div>
-          <div className="highlightInfo  border-slate-200 w-[140px] py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="highlightInfo  border-slate-200 w-35 py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <div className="icon  text-blue-500">
               <i className="fa-regular fa-circle-check"></i>
             </div>
             <p>Client Satisfaction</p>
           </div>
-          <div className="highlightInfo border-slate-200 w-[140px] py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+          <div className="highlightInfo border-slate-200 w-35 py-1.5 px-2.5 flex gap-2 items-center bg-white text-slate-900 cursor-pointer rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
             <div className="icon  text-blue-500">
               <i className="fa-solid fa-location-dot"></i>
             </div>
