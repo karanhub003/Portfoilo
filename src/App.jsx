@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import TestComponentMotion from "./components/TestComponentMotion";
 
 
 export const App = () => {
@@ -27,6 +28,7 @@ export const App = () => {
       <footer className="w-full bg-slate-900">
         <Footer/>
       </footer>
+      <TestComponentMotion/>
     </>
   );
 };

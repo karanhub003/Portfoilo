@@ -1,9 +1,17 @@
 import React from "react";
+import { motion } from "motion/react";
 import profileImage from "../assets/me.png"
 
 export default function AboutMe() {
   return (
-    <section className=" w-full bg-white py-24 ">
+    
+    <motion.section
+      initial={{opacity:0,x:10}}
+      whileInView={{opacity:1,x:0}}
+      transition={{duration:1.5 }}
+      viewport={{once:true}}
+    
+    className=" w-full bg-white py-24 ">
       <div className="aboutMe  flex xl:w-345 xl:mx-auto gap-8.5">
       <div className="aboutMeProfileContainer  p-2 xl:w-[25%]">
         <div className="profileImageFrame border-blue-100  rounded-2xl overflow-hidden bg-blue-50 shadow-lg"><img className="pl-1.5" src={profileImage} alt="profileImg" /></div>
@@ -41,7 +49,7 @@ export default function AboutMe() {
         </div>
       </div>
     </div>
-    </section>
+    </motion.section>
     
   );
 }
