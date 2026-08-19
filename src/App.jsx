@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 
 export const App = () => {
@@ -23,7 +24,9 @@ export const App = () => {
         <Projects/>
         <ContactMe/>
       </main>
-      <footer></footer>
+      <footer className="w-full bg-slate-900">
+        <Footer/>
+      </footer>
     </>
   );
 };
