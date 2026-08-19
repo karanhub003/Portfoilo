@@ -6,7 +6,7 @@ import upArrowImg from '../assets/icons/up-arrow.jpg'
 export default function Experience() {
   return (
     <>
-      <section className="experienceSection  w-full bg-slate-50 py-12">
+      <section className="experienceSection  w-full bg-white py-24">
         <div className="experienceHeadingInfoContainer flex flex-col items-center w-345 mx-auto mb-10">
           {" "}
           <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
@@ -36,7 +36,7 @@ export default function Experience() {
             </>
           ))}
         </div>
-        <div className="w-345 mx-auto ">
+        <div className="w-345 mx-auto  mt-2.5">
            <div className="experienceFooter border border-slate-400 max-w-240 mx-auto  flex items-center py-2.5 px-1.5 rounded-xl gap bg-slate-100 justify-center gap-4">
                   <div className="upArrowImgContainer  flex w-5 h-5">
                     <img src={upArrowImg} alt="upArrowImg" />

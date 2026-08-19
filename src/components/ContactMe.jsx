@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactMe() {
   return (
-    <section className="contactMeSection w-full bg-slate-50 py-12 flex flex-col gap-6.5 ">
+    <section className="contactMeSection w-full bg-white py-24 flex flex-col gap-6.5 ">
       <div className="contactMeHeadingInfoContainer flex flex-col items-center mb-5.5">
         {" "}
         <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">

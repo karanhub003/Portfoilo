@@ -4,7 +4,7 @@ import ProjectsCard from "./ProjectsCard.jsx";
 
 export default function Projects() {
   return (
-    <section className="projectsSection w-full bg-slate-50 py-12">
+    <section className="projectsSection w-full bg-slate-50 py-24">
       <div className="ProjectOuterContainer w-345 mx-auto">
         <div className="experienceHeadingInfoContainer flex flex-col items-center mb-4">
           {" "}

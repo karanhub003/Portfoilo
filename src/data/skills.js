@@ -103,7 +103,7 @@ export const skills = [
     icon: SiNextdotjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "Redux Tool",
     category: "Learning",
     icon: SiRedux,
   },

@@ -3,7 +3,7 @@ import profileImage from "../assets/me.png"
 
 export default function AboutMe() {
   return (
-    <section className=" w-full bg-slate-50 py-12 ">
+    <section className=" w-full bg-white py-24 ">
       <div className="aboutMe  flex w-345 mx-auto gap-[34px]">
       <div className="aboutMeProfileContainer  p-2 w-[25%]">
         <div className="profileImageFrame border-blue-100  rounded-2xl overflow-hidden bg-blue-50 shadow-lg"><img className="pl-1.5" src={profileImage} alt="profileImg" /></div>
