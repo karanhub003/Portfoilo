@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <>
       <section className="experienceSection  w-full bg-white py-24">
-        <div className="experienceHeadingInfoContainer flex flex-col items-center w-345 mx-auto mb-10">
+        <div className="experienceHeadingInfoContainer flex flex-col items-center xl:w-345 xl:mx-auto mb-10">
           {" "}
           <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
             Experience
@@ -22,7 +22,7 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="experienceOuterWrapper  w-345 mx-auto flex flex-col gap-6 items-center p-3 relative">
+        <div className="experienceOuterWrapper  xl:w-345 xl:mx-auto flex flex-col gap-6 items-center p-3 relative">
           <div className="w-0.5 h-full bg-blue-500 absolute  left-30 top-0"></div>
           {experiences.map((experience) => (
             <>
@@ -36,7 +36,7 @@ export default function Experience() {
             </>
           ))}
         </div>
-        <div className="w-345 mx-auto  mt-2.5">
+        <div className="xl:w-345 xl:mx-auto  mt-2.5">
            <div className="experienceFooter border border-slate-400 max-w-240 mx-auto  flex items-center py-2.5 px-1.5 rounded-xl gap bg-slate-100 justify-center gap-4">
                   <div className="upArrowImgContainer  flex w-5 h-5">
                     <img src={upArrowImg} alt="upArrowImg" />

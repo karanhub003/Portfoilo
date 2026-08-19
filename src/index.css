@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+@theme{
+    --breakpoint-xl:86.25rem;
+}
 body{
     margin: 0;
     box-sizing: border-box;

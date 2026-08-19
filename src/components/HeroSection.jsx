@@ -11,7 +11,7 @@ export default function HeroSection (){
       className="HeroSection font-[Inter] min-h-[90vh] relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      <div className=" max-w-345 mx-auto min-h-[90vh] flex items-center justify-between gap-12 py-24 ">
+      <div className=" xl:w-345 xl:mx-auto min-h-[90vh] flex items-center justify-between gap-12 py-24 px-3.5">
         <div className="w-[60%]">
           <p className="text-xl pb-5 text-slate-300">Hi, I'm</p>
           <p className="text-6xl pb-3 text-white leading-tight font-bold tracking-tight">

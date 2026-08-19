@@ -5,7 +5,7 @@ import ProjectsCard from "./ProjectsCard.jsx";
 export default function Projects() {
   return (
     <section className="projectsSection w-full bg-slate-50 py-24">
-      <div className="ProjectOuterContainer w-345 mx-auto">
+      <div className="ProjectOuterContainer xl:w-345 xl:mx-auto">
         <div className="experienceHeadingInfoContainer flex flex-col items-center mb-4">
           {" "}
           <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">

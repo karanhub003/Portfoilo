@@ -19,7 +19,7 @@ export default function ContactMe() {
         </div>
       </div>
 
-      <div className="contactMeContainer w-345 mx-auto  flex gap-8.5 p-2.5">
+      <div className="contactMeContainer xl:w-345 xl:mx-auto  flex gap-8.5 p-2.5">
         <div className="leftSideContainer bg-white shadow-md w-[40%] py-3 px-4.5 flex flex-col gap-3.5 rounded-lg ">
           <h3 className=" font-bold text-2xl">Contact Information</h3>
           <div className="contactInfoContainer flex flex-col gap-2">
@@ -133,7 +133,7 @@ export default function ContactMe() {
         </div>
       </div>
 
-      <div className="socialLinksContainer w-340 mx-auto">
+      <div className="socialLinksContainer xl:w-340 xl:mx-auto">
         <div className=" bg-white rounded-lg flex justify-between items-center p-2.5 gap-8.5 shadow-md">
           {" "}
           <div className="leftSide  flex w-[40%] py-2 px-4.5 gap-4 items-center border-r border-slate-300">

@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <>
       <section className="skillsSection w-full  bg-slate-50 py-24 ">
-        <div className="skillsOuterContainer  w-345 mx-auto  " >
+        <div className="skillsOuterContainer  xl:w-345 xl:mx-auto  " >
           <h2 className=" text-4xl text-slate-900 font-medium underline decoration-blue-500 text-center  mb-10">Skills</h2>
           <div className="skillInnerContainer  flex justify-between px-10">
             {categories.map((category) => (

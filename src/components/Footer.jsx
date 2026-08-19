@@ -3,7 +3,7 @@ import React from "react";
 export default function () {
   return (
     <>
-      <div className="footerMainContainer  w-345 mx-auto py-5">
+      <div className="footerMainContainer  xl:w-345 xl:mx-auto py-5">
         <div className="topContainer flex items-center gap-5  ">
           <div className="leftContainer w-[20%] flex flex-col gap-1 p-2">
             <h2 className="font-bold text-4xl text-white">
