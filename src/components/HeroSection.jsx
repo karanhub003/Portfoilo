@@ -1,4 +1,4 @@
-import React from "react";
+import { easeInOut, easeOut, motion } from "motion/react";
 import me from "../assets/me.png";
 import heroImg from "../assets/bg-hero.png";
 import git from "../assets/git.png";
@@ -12,7 +12,12 @@ export default function HeroSection (){
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className=" xl:w-345 xl:mx-auto min-h-[90vh] flex flex-col xl:flex-row items-center justify-between gap-12 py-24 px-3.5">
-        <div className="w-[60%]">
+        <motion.div 
+        initial={{opacity:0,x:-100}}
+        whileInView={{opacity:1,x:0}}
+        transition={{duration:0.8,ease:easeOut}}
+        viewport={{once:false}}
+        className=" leftSideContainer w-[60%]">
           <p className="text-xl pb-5 text-slate-300">Hi, I'm</p>
           <p className="text-6xl pb-3 text-white leading-tight font-bold tracking-tight">
             Karan Singh
@@ -92,11 +97,16 @@ duration-300"
               alt="me-pic"
             />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="w-[40%] flex">
+        <motion.div 
+        initial={{opacity:0,x:100}}
+        whileInView={{opacity:1,x:0}}
+        transition={{duration:0.8,ease:easeOut}}
+        viewport={{once:false}}
+        className=" rightSideContainer w-[40%] flex">
          <img className="profileImage w-full" src={me} alt="me-pic" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

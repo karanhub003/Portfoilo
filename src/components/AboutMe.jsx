@@ -1,15 +1,15 @@
 import React from "react";
-import { motion } from "motion/react";
+import { easeOut, motion } from "motion/react";
 import profileImage from "../assets/me.png"
 
 export default function AboutMe() {
   return (
     
     <motion.section
-      initial={{opacity:0,x:10}}
-      whileInView={{opacity:1,x:0}}
-      transition={{duration:1.5 }}
-      viewport={{once:true}}
+      initial={{opacity:0,y:50}}
+      whileInView={{opacity:1,y:0}}
+      transition={{duration:0.7,ease:easeOut }}
+      viewport={{once:false}}
     
     className=" w-full bg-white py-24 ">
       <div className="aboutMe  flex xl:w-345 xl:mx-auto gap-8.5">
