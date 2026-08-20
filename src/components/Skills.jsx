@@ -32,7 +32,7 @@ export default function Skills() {
 
   return (
     <>
-      <section className="skillsSection w-full  bg-slate-50 py-24 ">
+      <section className="skillsSection w-full  bg-slate-50 py-12 lg:py-24 ">
         <div className="skillsOuterContainer  xl:w-345 xl:mx-auto  ">
           <h2 className=" text-4xl text-slate-900 font-medium underline decoration-blue-500 text-center  mb-10">
             Skills
@@ -42,18 +42,18 @@ export default function Skills() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="skillInnerContainer  flex justify-between px-10"
+            className="skillInnerContainer  flex justify-center flex-wrap gap-8 xl:justify-between xl:px-10 px-2"
           >
             {categories.map((category) => (
               <motion.div
                 variants={item}
                 key={category}
-                className="w-[30%] min-h-52 p-2.5 flex flex-col gap-4 items-center"
+                className="xl:w-[30%] 1xl:w-[30%] p-4 lg:min-h-52 xl:p-2.5 md:w-[45%] flex flex-col gap-5.5 items-center"
               >
-                <h3 className=" text-2xl ">
+                <h3 className=" text-2xl font-medium text-slate-600 ">
                   {category === "Learning" ? "Learning" : category}
                 </h3>
-                <div className="flex flex-wrap gap-5">
+                <div className="flex flex-wrap gap-5 justify-center ">
                   {skills
                     .filter((skill) => skill.category === category)
                     .map((skill) => (

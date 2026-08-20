@@ -3,21 +3,21 @@ import React from "react";
 export default function () {
   return (
     <>
-      <div className="footerMainContainer  xl:w-345 xl:mx-auto py-5">
-        <div className="topContainer flex items-center gap-5  ">
-          <div className="leftContainer w-[20%] flex flex-col gap-1 p-2">
-            <h2 className="font-bold text-4xl text-white">
+      <div className="footerMainContainer xl:w-345 xl:mx-auto py-5">
+        <div className="topContainer flex flex-col md:flex-row items-center gap-5  ">
+          <div className="leftContainer w-full md:w-[20%] flex flex-col gap-1 p-2">
+            <h2 className="font-bold xl:text-4xl text-3xl text-white">
               Karan<span className="text-blue-600"> Singh</span>
             </h2>
-            <h4 className="text-blue-600 font-medium text-[20px]">Frontend Developer</h4>
+            <h4 className="text-blue-600 font-medium xl:text-[20px] text-[18px]">Frontend Developer</h4>
             <hr className="w-[10%] text-blue-600 my-1.5"   />
             <p className="text-slate-400 ">
               Building modern, responsive and user-friendly web experiences that
               makes impact.
             </p>
           </div>
-          <div className="rightContainer  flex w-[80%] justify-around py-4">
-            <div className="quickLinksContainer flex flex-col gap-1.5">
+          <div className="rightContainer  w-full flex flex-wrap md:flex-row  md:w-[80%] justify-between py-4 px-4">
+            <div className="quickLinksContainer  flex flex-col gap-1.5">
               <h3 className="font-bold text-[20px] text-white">Quick Links</h3>
               <hr className="w-5 text-blue-500" />
               <div className="linksInnerContainer flex flex-col gap-3 mt-1 ">
@@ -166,7 +166,7 @@ export default function () {
             </div>
           
           </div>
-          <div className="scrollerUpBox w-[5%] ">
+          <div className="scrollerUpBox hidden lg:block w-[5%] ">
             <div className="w-10 h-10 bg-slate-800 rounded-[50%] flex justify-center items-center"><i className="fa-solid fa-arrow-up text-blue-400"></i></div>
           </div>
         </div>

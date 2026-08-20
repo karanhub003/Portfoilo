@@ -6,7 +6,7 @@ export default function ExperienceCard({ experience }) {
   return (
     <>
     
-      <div className="experienceCard  max-w-5xl mx-auto flex  flex-col gap-3.5 bg-white rounded-3xl p-3.5 shadow-[-7px_6px_20px_-1px_rgba(134,_148,_104,_0.14)]">
+      <div className="experienceCard  max-w-5xl mx-auto flex  flex-col gap-3.5 bg-white rounded-3xl xl:p-3.5 p-2 shadow-[-7px_6px_20px_-1px_rgba(134,_148,_104,_0.14)]">
         <div className="companyInfoContainer  flex gap-3.5">
           <div className="companyProfileImg  w-20 h-20 flex items-center justify-center">
             <img src={experience.profile} alt="profileImg" />
@@ -33,7 +33,7 @@ export default function ExperienceCard({ experience }) {
             </div>
           </div>
         </div>
-        <p className="font-semibold text-slate-800">{experience.description}</p>
+        <p className="font-semibold text-slate-800 sm:text-[14px] md:text-[16px]">{experience.description}</p>
         <div className="workedSkillsContainer  flex gap-4">
           {experience.technologies.map((technology) => (
             <div className="workedSkillsBadges  py-1 px-2.5 rounded-2xl bg-slate-50">

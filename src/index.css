@@ -2,6 +2,9 @@
 
 @theme{
     --breakpoint-xl:86.25rem;
+    --breakpoint-1xl:80rem;
+    --breakpoint-1xlg:73.75rem;
+    --breakpoint-2xlg:60rem;
 }
 body{
     margin: 0;

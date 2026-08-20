@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactMe() {
   return (
-    <section className="contactMeSection w-full bg-white py-24 flex flex-col gap-6.5 ">
+    <section className="contactMeSection w-full bg-white py-12 lg:py-24 flex flex-col gap-6.5 ">
       <div className="contactMeHeadingInfoContainer flex flex-col items-center mb-5.5">
         {" "}
         <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
@@ -19,8 +19,8 @@ export default function ContactMe() {
         </div>
       </div>
 
-      <div className="contactMeContainer xl:w-345 xl:mx-auto  flex gap-8.5 p-2.5">
-        <div className="leftSideContainer bg-white shadow-md w-[40%] py-3 px-4.5 flex flex-col gap-3.5 rounded-lg ">
+      <div className="contactMeContainer xl:w-345 xl:mx-auto  flex flex-col md:flex-row gap-8.5 p-2.5">
+        <div className="leftSideContainer bg-white shadow-md md:w-[40%] py-3 xl:px-4.5 px-3 flex flex-col gap-3.5 rounded-lg ">
           <h3 className=" font-bold text-2xl">Contact Information</h3>
           <div className="contactInfoContainer flex flex-col gap-2">
             <div className="contactInfoCard   border-b border-slate-200 p-1.5  pb-2.5 gap-2 flex items-center">
@@ -77,7 +77,7 @@ export default function ContactMe() {
           </div>
         </div>
 
-        <div className="rightSideContainer   bg-white shadow-md w-[60%] py-3 px-4.5 flex flex-col gap-3.5 rounded-lg">
+        <div className="rightSideContainer   bg-white shadow-md md:w-[60%] py-3 xl:px-4.5 px-3 flex flex-col gap-3.5 rounded-lg">
           <h3 className="font-bold text-2xl">Send Me A Message</h3>
 
           <div className="formContainer flex flex-col p-1 gap-5">
@@ -134,9 +134,9 @@ export default function ContactMe() {
       </div>
 
       <div className="socialLinksContainer xl:w-340 xl:mx-auto">
-        <div className=" bg-white rounded-lg flex justify-between items-center p-2.5 gap-8.5 shadow-md">
+        <div className=" bg-white rounded-lg flex flex-col md:flex-row justify-between items-center p-2.5 gap-8.5 shadow-md">
           {" "}
-          <div className="leftSide  flex w-[40%] py-2 px-4.5 gap-4 items-center border-r border-slate-300">
+          <div className="leftSide w-full  flex md:w-[40%] py-2 xl:px-4.5 px-3 gap-4 items-center border-r border-slate-300">
             <div className="paperPlaneBox  rounded-[50%] flex items-center justify-center w-15 h-15 bg-blue-100">
               <i className="fa-solid fa-paper-plane text-2xl text-blue-500"></i>
             </div>
@@ -148,7 +148,7 @@ export default function ContactMe() {
               </p>
             </div>
           </div>
-          <div className="rightSide  flex w-[60%] items-center py-3 px-4.5 gap-4 ">
+          <div className="rightSide  flex w-full md:w-[60%] justify-between md:justify-normal items-center py-3 xl:px-4.5 px-3 gap-4 ">
             <p className="text-slate-500 w-[20%]">Also find me on</p>
             <div className="socialImgBox flex items-center justify-between  w-[60%]">
               <div className="w-15 h-15 bg-blue-100 rounded-[50%] flex items-center justify-center ]">

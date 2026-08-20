@@ -6,7 +6,7 @@ import upArrowImg from '../assets/icons/up-arrow.jpg'
 export default function Experience() {
   return (
     <>
-      <section className="experienceSection  w-full bg-white py-24">
+      <section className="experienceSection  w-full bg-white py-12 lg:py-24">
         <div className="experienceHeadingInfoContainer flex flex-col items-center xl:w-345 xl:mx-auto mb-10">
           {" "}
           <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
@@ -22,12 +22,12 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="experienceOuterWrapper  xl:w-345 xl:mx-auto flex flex-col gap-6 items-center p-3 relative">
-          <div className="w-0.5 h-full bg-blue-500 absolute  left-30 top-0"></div>
+        <div className="experienceOuterWrapper  xl:w-345 xl:mx-auto flex flex-col gap-6 items-center sm:p-2 md:p-3 relative">
+          <div className="w-0.5 h-full bg-blue-500 absolute hidden 1xlg:block 1xl:block 1xlg:left-15 1xl:left-30 top-0"></div>
           {experiences.map((experience) => (
             <>
               <div className="wrapper relative w-full">
-                <div className="dot w-5 h-5 rounded-full bg-blue-500 absolute left-25 top-0"></div>
+                <div className="dot w-5 h-5 rounded-full bg-blue-500 absolute hidden 1xlg:block 1xl:block 1xlg:left-9.75 1xl:left-25 top-0"></div>
                 <ExperienceCard
                   key={experience.company}
                   experience={experience}
@@ -41,7 +41,7 @@ export default function Experience() {
                   <div className="upArrowImgContainer  flex w-5 h-5">
                     <img src={upArrowImg} alt="upArrowImg" />
                   </div>
-                  <p className="text-[16px] text-slate-600 font-medium">1+ Years of experience in building modern, responsive and user-friendly web applications.</p>
+                  <p className="md:text-[16px] sm:text-[14px] text-slate-600 font-medium">1+ Years of experience in building modern, responsive and user-friendly web applications.</p>
                 </div>
         </div>
       </section>

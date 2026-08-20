@@ -6,12 +6,12 @@ export default function ProjectsCard({ project }) {
   console.log(project);
   return (
     <div
-      className="projectCardContainer flex flex-col w-[30.5%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white
+      className="projectCardContainer flex flex-col w-full sm:w-[45%] md:w-[47%] 1xl:w-[30.5%] xl:w-[30.5%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white
 rounded-3xl
 transition-all
 duration-300
 hover:-translate-y-3
-hover:shadow-2xl
+hover:shadow-2xl 
 cursor-pointer "
     >
       <div className="projectInfoBox  p-2.5 flex flex-col gap-1.5">
@@ -20,10 +20,10 @@ cursor-pointer "
           <img src={project.image} alt="" />
         </div>
         <h2 className="text-[18px] font-medium">{project.name}</h2>
-        <p className="text-slate-500 font-medium">{project.description}</p>
+        <p className="text-slate-500 font-medium md:text-[16px] sm:text-[14px]">{project.description}</p>
         <div className="flex gap-4 mt-1.5">
           {project.technologies.map((technology) => (
-            <div className=" border py-1 px-2.5 rounded-3xl">{technology}</div>
+            <div className=" border py-1 px-2.5 rounded-3xl md:text-[16px] sm:text-[14px]">{technology}</div>
           ))}
         </div>
       </div>

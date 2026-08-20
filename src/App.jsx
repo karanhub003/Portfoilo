@@ -28,7 +28,6 @@ export const App = () => {
       <footer className="w-full bg-slate-900">
         <Footer/>
       </footer>
-      <TestComponentMotion/>
     </>
   );
 };

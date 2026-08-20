@@ -4,7 +4,7 @@ import ProjectsCard from "./ProjectsCard.jsx";
 
 export default function Projects() {
   return (
-    <section className="projectsSection w-full bg-slate-50 py-24">
+    <section className="projectsSection w-full bg-slate-50 py-12 lg:py-24">
       <div className="ProjectOuterContainer xl:w-345 xl:mx-auto">
         <div className="experienceHeadingInfoContainer flex flex-col items-center mb-4">
           {" "}
@@ -26,7 +26,7 @@ export default function Projects() {
           <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">Frontend</div>
           <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">Full Stack</div>
         </div>
-        <div className="projectsWrappersContainer flex  flex-wrap justify-around gap-y-9 ">
+        <div className="projectsWrappersContainer flex flex-col  sm:flex-wrap justify-center 1xl:justify-around xl:justify-around  gap-7 gap-y-8 ">
           {projects.map((project) => (
             <ProjectsCard key={project.id} project={project} />
           ))}
