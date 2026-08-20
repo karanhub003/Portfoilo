@@ -1,4 +1,4 @@
-import React from "react";
+import {motion} from "motion/react";
 import calenderImg from "../assets/icons/calendar.png";
 import locationImg from "../assets/icons/location.png";
 
@@ -6,7 +6,11 @@ export default function ExperienceCard({ experience }) {
   return (
     <>
     
-      <div className="experienceCard  max-w-5xl mx-auto flex  flex-col gap-3.5 bg-white rounded-3xl xl:p-3.5 p-2 shadow-[-7px_6px_20px_-1px_rgba(134,_148,_104,_0.14)]">
+      < motion.div 
+        whileHover={{y:-12}}
+        transition={{duration:0.2}}
+      
+      className="experienceCard  max-w-5xl mx-auto flex  flex-col gap-3.5 bg-white rounded-3xl xl:p-3.5 p-2 shadow-[-7px_6px_20px_-1px_rgba(134,_148,_104,_0.14)]">
         <div className="companyInfoContainer  flex gap-3.5">
           <div className="companyProfileImg  w-20 h-20 flex items-center justify-center">
             <img src={experience.profile} alt="profileImg" />
@@ -36,12 +40,12 @@ export default function ExperienceCard({ experience }) {
         <p className="font-semibold text-slate-800 sm:text-[14px] md:text-[16px]">{experience.description}</p>
         <div className="workedSkillsContainer  flex gap-4">
           {experience.technologies.map((technology) => (
-            <div className="workedSkillsBadges  py-1 px-2.5 rounded-2xl bg-slate-50">
+            <div className="workedSkillsBadges  py-1 px-2.5 rounded-2xl bg-slate-100">
               {technology}
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

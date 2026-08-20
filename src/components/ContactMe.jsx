@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "motion/react";
 
 export default function ContactMe() {
   return (
@@ -20,7 +20,16 @@ export default function ContactMe() {
       </div>
 
       <div className="contactMeContainer xl:w-345 xl:mx-auto  flex flex-col md:flex-row gap-8.5 p-2.5">
-        <div className="leftSideContainer bg-white shadow-md md:w-[40%] py-3 xl:px-4.5 px-3 flex flex-col gap-3.5 rounded-lg ">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
+          className="leftSideContainer bg-white shadow-md md:w-[40%] py-3 xl:px-4.5 px-3 flex flex-col gap-3.5 rounded-lg "
+        >
           <h3 className=" font-bold text-2xl">Contact Information</h3>
           <div className="contactInfoContainer flex flex-col gap-2">
             <div className="contactInfoCard   border-b border-slate-200 p-1.5  pb-2.5 gap-2 flex items-center">
@@ -72,12 +81,29 @@ export default function ContactMe() {
               </div>
             </div>
           </div>
-          <div className="resumeBox border p-3 flex items-center justify-center gap-2 border-blue-400 rounded-lg text-blue-500 font-bold bg-blue-50 cursor-pointer hover:bg-blue-500 hover:text-white">
+          <motion.div
+            whileHover={{
+              scale: 1.03,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            className="resumeBox border p-3 flex items-center justify-center gap-2 border-blue-400 rounded-lg text-blue-500 font-bold bg-blue-50 cursor-pointer hover:bg-blue-500 hover:text-white"
+          >
             <i className="fa-regular fa-file  font-medium "></i>Download Resume
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="rightSideContainer   bg-white shadow-md md:w-[60%] py-3 xl:px-4.5 px-3 flex flex-col gap-3.5 rounded-lg">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
+          className="rightSideContainer   bg-white shadow-md md:w-[60%] py-3 xl:px-4.5 px-3 flex flex-col gap-3.5 rounded-lg"
+        >
           <h3 className="font-bold text-2xl">Send Me A Message</h3>
 
           <div className="formContainer flex flex-col p-1 gap-5">
@@ -126,11 +152,19 @@ export default function ContactMe() {
               </div>
             </div>
           </div>
-          <div className="formSubmitContainer border p-3 flex items-center justify-center gap-2 border-blue-400 rounded-lg text-blue-500 font-bold bg-blue-50 cursor-pointer hover:bg-blue-500 hover:text-white">
+          <motion.div
+            whileHover={{
+              scale: 1.03,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            className="formSubmitContainer border p-3 flex items-center justify-center gap-2 border-blue-400 rounded-lg text-blue-500 font-bold bg-blue-50 cursor-pointer hover:bg-blue-500 hover:text-white"
+          >
             <i class="fa-solid fa-paper-plane"></i>
             <p>Send Message</p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
       <div className="socialLinksContainer xl:w-340 xl:mx-auto">
