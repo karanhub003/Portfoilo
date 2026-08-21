@@ -10,12 +10,12 @@ export default function NavBar  () {
     <img src={logo} alt="logo" className="w-max" />
     </div>
     <div className='NavItemBox hidden  sm:flex gap-3 md:gap-8 sm:gap-4 justify-center items-center text-slate-300 cursor-pointer lg:py-4 lg:px-10  '>
-       <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1 '><p>Home</p></div>
-       <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5  md:px-2.5 md:py-1'><p>About</p></div>
-       <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1'><p>Skills</p></div>
-       <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5 md:px-2.5 md:py-1'><p>Projects</p></div>
-       <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1'><p>Experience</p></div>
-       <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5 md:px-2.5 md:py-1'><p>Contact</p></div>
+       <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1 '><a href="#home">Home</a></div>
+       <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5  md:px-2.5 md:py-1'><a href="#about">About</a></div>
+       <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1'><a href="#skills">Skills</a></div>
+       <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5 md:px-2.5 md:py-1'><a href="#experience">Experience</a></div>
+       <div className='hover:bg-blue-400 hover:text-white rounded-md lg:px-5 lg:py-1.5  md:px-2.5 md:py-1'><a href="#projects">Projects</a></div>
+       <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5 md:px-2.5 md:py-1'><a href="#contact">Contact</a></div>
     </div>
     <div className='NavItemBox hidden sm:block   text-slate-300 '>
         <button>Download CV</button>
