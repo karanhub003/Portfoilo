@@ -1,4 +1,4 @@
-import northPeakImg from '../assets/northpeak-heroimage.png'
+import northPeakImg from '../assets/northpeak-heroimage.webp'
 
 export const projects=[
     {

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.webp"
 import icon from "../assets/icon.png"
 import '../index.css'
 

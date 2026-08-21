@@ -1,6 +1,6 @@
 import { color, easeInOut, easeOut, motion } from "motion/react";
-import me from "../assets/me.png";
-import heroImg from "../assets/bg-hero.png";
+import me from "../assets/me.webp";
+import heroImg from "../assets/bg-hero.webp";
 import git from "../assets/git.png";
 import email from "../assets/email.png";
 import linkdin from "../assets/linkdin.png";
