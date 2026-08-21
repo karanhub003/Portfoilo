@@ -10,7 +10,7 @@ export default function SkillsBadge({skill}) {
       <div className='w-5 h-5'>
         <img src={skill.icon} alt="" />
       </div>
-      <p>{skill.name}</p>
+      <p className=' text-[14px] 2xl:text-[16px]'>{skill.name}</p>
     </motion.div>
     
   )

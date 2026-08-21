@@ -32,19 +32,19 @@ cursor-pointer "
             alt=""
           />
         </div>
-        <h2 className="text-[18px] font-medium">{project.name}</h2>
-        <p className="text-slate-500 font-medium md:text-[16px] sm:text-[14px]">
+        <h2 className=" text-[16px] sm:text-[18px] font-medium">{project.name}</h2>
+        <p className="text-slate-500 font-medium md:text-[16px] text-[14px]">
           {project.description}
         </p>
         <div className="flex gap-4 mt-1.5">
           {project.technologies.map((technology) => (
-            <div className=" border py-1 px-2.5 rounded-3xl md:text-[16px] sm:text-[14px]">
+            <div className=" border py-0.5 px-1.25 sm:py-1 sm:px-2.5 rounded-3xl md:text-[16px] text-[14px]">
               {technology}
             </div>
           ))}
         </div>
       </div>
-      <div className="liveLinksBox flex border-t border-slate-50 p-2.5 justify-between bg-slate-100 rounded-br-xl rounded-bl-xl ">
+      <div className="liveLinksBox flex border-t border-slate-50 p-1.25 sm:p-2.5 justify-between bg-slate-100 rounded-br-xl rounded-bl-xl ">
         <div className="liveLinkContainer flex items-center gap-1">
           <img className="w-4 h-4" src={linkImg} alt="" />
           <a

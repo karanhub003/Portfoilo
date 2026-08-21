@@ -26,7 +26,7 @@ export default function Projects() {
     },
   };
   return (
-    <section className="projectsSection w-full bg-slate-50 py-12 lg:py-24">
+    <section id="projects" className="projectsSection w-full bg-slate-50 py-8 2xl:py-12 lg:py-24">
       <motion.div 
       variants={container}
       initial='hidden'
@@ -42,35 +42,35 @@ export default function Projects() {
               duration: 0.6,
               ease: "easeOut",
             }}
-            className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5"
+            className=" text-2xl 2xl:text-3xl sm:text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5"
           >
             Projects
           </motion.h2>
           <div className="text-center">
             {" "}
-            <p className="text-[18px] text-slate-600">
+            <p className="  text-[12px] 2xl:text-[16px] sm:text-[18px] text-slate-600">
               A showcase of my recent work. Each project is built with
             </p>
-            <p className="text-[18px] text-slate-600">
+            <p className="  text-[12px] 2xl:text-[16px] sm:text-[18px] text-slate-600">
               passion, focusing on clean code, performance and great user
               experience.
             </p>
           </div>
         </div>
-        <div className="projectsCategoriesContainer flex justify-center gap-16 text-slate-600 ">
-          <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white ">
+        <div className="projectsCategoriesContainer flex justify-center gap-8 sm:gap-16 text-slate-600 ">
+          <div className=" text-[14px] 2xl:-[16px] py-0.75 sm:py-1.5 px-1.25 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white ">
             All
           </div>
-          <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
+          <div className=" text-[14px] 2xl:-[16px] py-0.75 sm:py-1.5 px-1.5 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
             Frontend
           </div>
-          <div className="py-1.5 px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
+          <div className=" text-[14px] 2xl:-[16px] py-0.75 sm:py-1.5 px-1.5 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
             Full Stack
           </div>
         </div>
         <motion.div 
           variants={item}
-        className="projectsWrappersContainer flex flex-col   sm:flex-wrap  sm:flex-row justify-center 1xl:justify-around xl:justify-around  gap-7 gap-y-8 ">
+        className="projectsWrappersContainer flex flex-col   sm:flex-wrap  sm:flex-row justify-center 1xl:justify-around xl:justify-around  gap-7 gap-y-8 px-2 sm:px-0 ">
           {projects.map((project) => (
             <ProjectsCard key={project.id} project={project} />
           ))}

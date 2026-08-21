@@ -5,6 +5,12 @@
     --breakpoint-1xl:80rem;
     --breakpoint-1xlg:73.75rem;
     --breakpoint-2xlg:60rem;
+    --breakpoint-2xl:34.0625rem
+}
+
+
+html{
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;

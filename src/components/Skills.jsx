@@ -32,9 +32,9 @@ export default function Skills() {
 
   return (
     <>
-      <section className="skillsSection w-full  bg-slate-50 py-12 lg:py-24 ">
+      <section id="skills" className="skillsSection w-full  bg-slate-50  py-8 2xl:py-12 lg:py-24 ">
         <div className="skillsOuterContainer  xl:w-345 xl:mx-auto  ">
-          <h2 className=" text-4xl text-slate-900 font-medium underline decoration-blue-500 text-center  mb-10">
+          <h2 className=" text-2xl 2xl:text-3xl sm:text-4xl text-slate-900 font-medium underline decoration-blue-500 text-center mb-6  2xl:mb-10">
             Skills
           </h2>
           <motion.div
@@ -42,15 +42,15 @@ export default function Skills() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="skillInnerContainer  flex justify-center flex-wrap gap-8 xl:justify-between xl:px-10 px-2"
+            className="skillInnerContainer  flex justify-center flex-wrap gap-6 2xl:gap-8 xl:justify-between xl:px-10 px-2"
           >
             {categories.map((category) => (
               <motion.div
                 variants={item}
                 key={category}
-                className="xl:w-[30%] 1xl:w-[30%] p-4 lg:min-h-52 xl:p-2.5 md:w-[45%] flex flex-col gap-5.5 items-center"
+                className="xl:w-[30%] 1xl:w-[30%] p-2 2xl:p-4 lg:min-h-52 xl:p-2.5 md:w-[45%] flex flex-col gap-2.75 2xl:gap-5.5 items-center"
               >
-                <h3 className=" text-2xl font-medium text-slate-600 ">
+                <h3 className=" text-[20px] 2xl:text-2xl font-medium text-slate-600 ">
                   {category === "Learning" ? "Learning" : category}
                 </h3>
                 <div className="flex flex-wrap gap-5 justify-center ">

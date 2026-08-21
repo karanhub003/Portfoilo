@@ -14,7 +14,7 @@ import TestComponentMotion from "./components/TestComponentMotion";
 export const App = () => {
   return (
     <>
-      <header className="bg-slate-900 w-full">
+      <header className="bg-slate-900 w-full ">
         <NavBar />
       </header>
       <main>

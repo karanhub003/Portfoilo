@@ -22,18 +22,18 @@ export default function Experience() {
 
   return (
     <>
-      <section className="experienceSection  w-full bg-white py-12 lg:py-24">
-        <div className="experienceHeadingInfoContainer flex flex-col items-center xl:w-345 xl:mx-auto mb-10">
+      <section id="experience" className="experienceSection  w-full bg-white py-8 2xl:py-12 lg:py-24">
+        <div className="experienceHeadingInfoContainer flex flex-col items-center xl:w-345 xl:mx-auto mb-5 sm:mb-10">
           {" "}
-          <h2 className="text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
+          <h2 className=" text-2xl 2xl:text-3xl sm:text-4xl text-slate-900 font-medium underline decoration-blue-500  mb-3.5">
             Experience
           </h2>
           <div className="text-center">
             {" "}
-            <p className="text-[18px]">
+            <p className=" text-[12px] 2xl:text-[16px] sm:text-[18px]">
               A look at my professional journey and the value
             </p>
-            <p className="text-[18px]">
+            <p className=" text-[12px] 2xl:text-[16px] sm:text-[18px]">
               I've contributed to teams and projects.
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function Experience() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="experienceOuterWrapper  xl:w-345 xl:mx-auto flex flex-col gap-6 items-center sm:p-2 md:p-3 relative"
+          className="experienceOuterWrapper  xl:w-345 xl:mx-auto flex flex-col gap-6 items-center px-2 sm:p-2 md:p-3 relative"
         >
           <motion.div
             initial={{ height: 0 }}
@@ -65,12 +65,12 @@ export default function Experience() {
             </>
           ))}
         </motion.div>
-        <div className="xl:w-345 xl:mx-auto  mt-2.5">
-          <div className="experienceFooter border border-slate-400 max-w-240 mx-auto  flex items-center py-2.5 px-1.5 rounded-xl gap bg-slate-100 justify-center gap-4">
-            <div className="upArrowImgContainer  flex w-5 h-5">
+        <div className="xl:w-345 xl:mx-auto  mt-2.5 px-2 sm:px-0">
+          <div className="experienceFooter border border-slate-400 w-full  sm:max-w-240 mx-auto  flex items-center sm:py-2.5 py-1 px-1.5 rounded-xl  bg-slate-100 justify-center gap-2 sm:gap-4">
+            <div className="upArrowImgContainer  flex w-2.5 h-2.5 2xl:w-5 2xl:h-5">
               <img src={upArrowImg} alt="upArrowImg" />
             </div>
-            <p className="md:text-[16px] sm:text-[14px] text-slate-600 font-medium">
+            <p className=" text-[12px] sm:text-[14px] md:text-[16px]  text-slate-600 font-medium">
               1+ Years of experience in building modern, responsive and
               user-friendly web applications.
             </p>
