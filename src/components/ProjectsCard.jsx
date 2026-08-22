@@ -13,14 +13,14 @@ export default function ProjectsCard({ project }) {
       transition={{
         duration: 0.2,
       }}
-      className="projectCardContainer flex flex-col w-full sm:w-[45%] md:w-[47%] 1xl:w-[30.5%] xl:w-[30.5%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white
+      className="projectCardContainer flex flex-col  w-full sm:w-[45%] md:w-[47%] 1xl:w-[30.5%] xl:w-[30.5%] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white
 rounded-3xl
  
 cursor-pointer "
     >
-      <div className="projectInfoBox  p-2.5 flex flex-col gap-1.5">
+      <div className="projectInfoBox   p-2.5 flex flex-col  gap-1.5 flex-1">
         {" "}
-        <div className="projectImg  rounded-tr-xl rounded-tl-xl overflow-hidden">
+        <div className="projectImg aspect-video  rounded-tr-xl rounded-tl-xl overflow-hidden">
           <motion.img
             whileHover={{
               scale: 1.05,
@@ -30,6 +30,7 @@ cursor-pointer "
             }}
             src={project.image}
             alt=""
+            className="w-full h-full object-fit"
           />
         </div>
         <h2 className=" text-[16px] sm:text-[18px] font-medium">{project.name}</h2>
@@ -44,7 +45,7 @@ cursor-pointer "
           ))}
         </div>
       </div>
-      <div className="liveLinksBox flex border-t border-slate-50 p-1.25 sm:p-2.5 justify-between bg-slate-100 rounded-br-xl rounded-bl-xl ">
+      <div className="liveLinksBox  flex border-t border-slate-50 p-1.25 sm:p-2.5 justify-between bg-slate-100 rounded-br-xl rounded-bl-xl ">
         <div className="liveLinkContainer flex items-center gap-1">
           <img className="w-4 h-4" src={linkImg} alt="" />
           <a

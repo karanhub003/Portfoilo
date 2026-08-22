@@ -58,19 +58,19 @@ export default function Projects() {
           </div>
         </div>
         <div className="projectsCategoriesContainer flex justify-center gap-8 sm:gap-16 text-slate-600 ">
-          <div className=" text-[14px] 2xl:-[16px] py-0.75 sm:py-1.5 px-1.25 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white ">
+          <div className=" text-[14px] 2xl:text-[16px] py-0.75 sm:py-1.5 px-1.25 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white ">
             All
           </div>
-          <div className=" text-[14px] 2xl:-[16px] py-0.75 sm:py-1.5 px-1.5 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
+          <div className=" text-[14px] 2xl:text-[16px] py-0.75 sm:py-1.5 px-1.5 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
             Frontend
           </div>
-          <div className=" text-[14px] 2xl:-[16px] py-0.75 sm:py-1.5 px-1.5 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
+          <div className=" text-[14px] 2xl:text-[16px] py-0.75 sm:py-1.5 px-1.5 sm:px-2.5  hover:underline decoration-blue-500 font-medium  mb-3.5 active:bg-blue-500 active:text-white">
             Full Stack
           </div>
         </div>
         <motion.div 
           variants={item}
-        className="projectsWrappersContainer flex flex-col   sm:flex-wrap  sm:flex-row justify-center 1xl:justify-around xl:justify-around  gap-7 gap-y-8 px-2 sm:px-0 ">
+        className="projectsWrappersContainer flex flex-col items-stretch   sm:flex-wrap  sm:flex-row justify-center 1xl:justify-around xl:justify-around  gap-7 gap-y-8 px-2 sm:px-0 ">
           {projects.map((project) => (
             <ProjectsCard key={project.id} project={project} />
           ))}
