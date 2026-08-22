@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 
 export default function ContactMe() {
+  const isMobile=window.innerWidth<850;
   return (
     <section id="contact" className="contactMeSection w-full bg-white py-8 2xl:py-12 lg:py-24 flex flex-col gap-3.25 sm:gap-6.5 ">
       <div className="contactMeHeadingInfoContainer flex flex-col items-center mb-3 sm:mb-5.5">
@@ -20,8 +21,9 @@ export default function ContactMe() {
       </div>
 
       <div className="contactMeContainer xl:w-345 xl:mx-auto  flex flex-col md:flex-row gap-8.5 px-2 sm:p-2.5">
+        
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: isMobile ? 0:-20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
@@ -95,7 +97,7 @@ export default function ContactMe() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: isMobile ? 0: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{
