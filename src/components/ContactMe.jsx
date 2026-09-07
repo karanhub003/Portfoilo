@@ -17,6 +17,8 @@ const handleSupport =async(e)=>{
 const form=e.target;
 const formData=new FormData(form)
 
+formData.set("form-name", "contact");
+
 
 try{
   const response=await fetch("/",{
