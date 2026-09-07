@@ -24,7 +24,7 @@ try{
   const response=await fetch("/",{
     method:"POST",
     headers:{"Content-Type": "application/x-www-form-urlencoded",},
-    body: new URLSearchParams(FormData).toString(),
+    body: new URLSearchParams(formData).toString(),
   });
   if(!response.ok){
     throw new Error("Form Submission Failed")
