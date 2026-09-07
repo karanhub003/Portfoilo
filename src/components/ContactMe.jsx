@@ -1,7 +1,44 @@
 import { motion } from "motion/react";
+import { useState } from "react";
 
 export default function ContactMe() {
   const isMobile = window.innerWidth < 850;
+const [isSubmitting, setIsSubmitting] = useState(false);
+const [submitted, setSubmitted] = useState(false);
+const [error, setError] = useState(false);
+
+
+const handleSupport =async(e)=>{
+  e.preventDefault()
+
+  setIsSubmitting(true);
+  setError(false)
+
+const form=e.target;
+const formData=new FormData(form)
+
+
+try{
+  const response=await fetch("/",{
+    method:"POST",
+    headers:{"Content-Type": "application/x-www-form-urlencoded",},
+    body: new URLSearchParams(FormData).toString(),
+  });
+  if(!response.ok){
+    throw new Error("Form Submission Failed")
+  }
+
+  setSubmitted(true);
+  form.reset()
+}catch(error){
+  console.error(error);
+  setError(true)
+}finally{
+  setIsSubmitting(false);
+}
+}
+
+
   return (
     <section
       id="contact"
@@ -133,6 +170,7 @@ export default function ContactMe() {
             name="contact"
             method="POST"
             data-netlify="true"
+            onSubmit={handleSupport}
             className="formContainer flex flex-col p-1 gap-5"
           >
             <input type="hidden" name="form-name" value="contact" />
@@ -200,7 +238,7 @@ export default function ContactMe() {
               className="formSubmitContainer text-[14px] 2xl:text-[16px] border p-1.5 sm:p-3 flex items-center justify-center gap-2 border-blue-400 rounded-lg text-blue-500 font-bold bg-blue-50 cursor-pointer hover:bg-blue-500 hover:text-white "
             >
               <i class="fa-solid fa-paper-plane"></i>
-              <button type="submit" className="cursor-pointer">Send Message</button>
+              <button type="submit" disabled={isSubmitting} className="cursor-pointer">{isSubmitting? "Sending...":"Send Response"}</button>
             </motion.div>
           </form>
         </motion.div>
