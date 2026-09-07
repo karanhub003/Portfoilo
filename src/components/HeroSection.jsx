@@ -4,6 +4,7 @@ import heroImg from "../assets/bg-hero.webp";
 import git from "../assets/git.png";
 import email from "../assets/email.png";
 import linkdin from "../assets/linkdin.png";
+import {personalDetails} from '../data/myData'
 
 export default function HeroSection() {
   return (
@@ -98,30 +99,30 @@ hover:text-blue-400"
             </a>
           </div>
           <div className="SocialIconContainer  flex gap-10 py-4 lg:py-0 ">
-            <img
+           <a href={personalDetails.gitHub } target="_blank" rel="noopener noreferrer"><img
               className="w-7 bg-white rounded-full   cursor-pointer hover:scale-110
 hover:bg-blue-400
 transition-all
 duration-300"
               src={git}
               alt="GitIcon"
-            />
-            <img
+            /></a>
+            <a href="#contact"><img
               className="w-7 bg-white rounded-full  cursor-pointer hover:scale-110
 hover:bg-blue-400
 transition-all
 duration-300"
               src={email}
               alt="me-pic"
-            />
-            <img
+            /></a>
+           <a href={personalDetails.linkedin} target="_blank" rel="noopener noreferrer"> <img
               className="w-7 bg-white rounded-full  cursor-pointer hover:scale-110
 hover:bg-blue-400
 transition-all
 duration-300"
               src={linkdin}
               alt="me-pic"
-            />
+            /></a>
           </div>
         </motion.div>
 

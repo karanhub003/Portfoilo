@@ -130,10 +130,10 @@ try{
                 </p>
                 <a
                   className=" text-blue-500 text-[12px] 2xl:text-[14px] sm:text-[16px]"
-                  href="www.linkedin.com/in/karan-singh-kushwah-603325351"
+                  href="https://www.linkedin.com/in/karan-singh-kushwah-603325351"
                   target="_blank"
                 >
-                  www.linkedin.com/in/karan-singh-kushwah-603325351
+                  https://www.linkedin.com/in/karan-singh-kushwah-603325351
                 </a>
               </div>
             </div>

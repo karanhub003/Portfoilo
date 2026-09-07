@@ -1,4 +1,5 @@
 import React from "react";
+import { personalDetails } from "../data/myData";
 
 export default function () {
   return (
@@ -125,21 +126,21 @@ export default function () {
           <div className="socialLinksContainer flex items-center justify-center p-3 gap-8 ">
             <div className="socialLinksBox flex flex-col items-center gap-1 hover:text-blue-400 ">
               <div className="w-6 2xl:w-12 h-6 2xl:h-12 rounded-[50%] bg-slate-800 flex items-center justify-center">
-                <a href="#"><i class="fa-brands fa-github text-white text-[12px] 2xl:text-[20px]"></i></a>
+                <a href={personalDetails.gitHub} target="_blank"><i class="fa-brands fa-github text-white text-[12px] 2xl:text-[20px]"></i></a>
               </div>
-              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href="#">GitHub</a>
+              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href={personalDetails.gitHub} target="_blank">GitHub</a>
             </div>
             <div className="socialLinksBox flex flex-col items-center gap-1 hover:text-blue-400">
               <div className="w-6 2xl:w-12 h-6 2xl:h-12 rounded-[50%] bg-slate-800 flex items-center justify-center">
-                <a href="#"><i class="fa-brands fa-linkedin-in text-blue-500 text-[12px] 2xl:text-[20px]"></i></a>
+                <a  href={personalDetails.linkedin} target="_blank"><i class="fa-brands fa-linkedin-in text-blue-500 text-[12px] 2xl:text-[20px]"></i></a>
               </div>
-              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href="#">Linkedin</a>
+              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href={personalDetails.linkedin} target="_blank">Linkedin</a>
             </div>
             <div className="socialLinksBox flex flex-col items-center gap-1 hover:text-blue-400">
               <div className="w-6 2xl:w-12 h-6 2xl:h-12 rounded-[50%] bg-slate-800 flex items-center justify-center">
-                <a href="#"><i class="fa-regular fa-envelope text-white text-[12px] 2xl:text-[20px]"></i></a>
+                <a href="#contact"><i class="fa-regular fa-envelope text-white text-[12px] 2xl:text-[20px]"></i></a>
               </div>
-              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href="#">Email</a>
+              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href="#contact">Email</a>
             </div>
             <div className="socialLinksBox flex flex-col items-center gap-1 hover:text-blue-400">
               <div className="w-6 2xl:w-12 h-6 2xl:h-12 rounded-[50%] bg-slate-800 flex items-center justify-center">
