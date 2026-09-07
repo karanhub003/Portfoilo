@@ -143,9 +143,9 @@ export default function () {
             </div>
             <div className="socialLinksBox flex flex-col items-center gap-1 hover:text-blue-400">
               <div className="w-6 2xl:w-12 h-6 2xl:h-12 rounded-[50%] bg-slate-800 flex items-center justify-center">
-                <a href="#"><i className="fa-regular fa-file text-white  font-medium text-[12px] 2xl:text-[20px] "></i></a>
+                <a href="/Resume.pdf" download><i className="fa-regular fa-file text-white  font-medium text-[12px] 2xl:text-[20px] "></i></a>
               </div>
-              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href="#">Resume</a>
+              <a className="font-medium text-white text-[14px] 2xl:text-[16px]" href="/Resume.pdf" download>Resume</a>
             </div>
           </div>
         </div>

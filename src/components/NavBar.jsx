@@ -18,7 +18,7 @@ export default function NavBar  () {
        <div className='hover:bg-blue-400 hover:text-white rounded-md  lg:px-5 lg:py-1.5 md:px-2.5 md:py-1'><a href="#contact">Contact</a></div>
     </div>
     <div className='NavItemBox hidden sm:block   text-slate-300 '>
-        <button>Download CV</button>
+        <a href="/Resume.pdf" download><button className='hover:bg-blue-400 p-1.5 rounded-lg hover:text-white cursor-pointer'>Download CV</button></a>
     </div>
     <div className='sm:hidden'>
       <div className='border rounded-4xl w-8 bg-black flex items-center justify-center'>

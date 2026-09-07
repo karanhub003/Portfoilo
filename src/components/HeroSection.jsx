@@ -8,7 +8,7 @@ import linkdin from "../assets/linkdin.png";
 export default function HeroSection() {
   return (
     <section
-    id="home"
+      id="home"
       className="HeroSection font-[Inter] min-h-[90vh] relative bg-cover bg-center bg-no-repeat overflow-x-hidden"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
@@ -20,7 +20,9 @@ export default function HeroSection() {
           viewport={{ once: false }}
           className=" leftSideContainer lg:w-[60%] w-full items-center lg:items-start  flex flex-col "
         >
-          <p className=" text-[16px] sm:text-xl pb-2.5 lg:pb-5 text-slate-300">Hi, I'm</p>
+          <p className=" text-[16px] sm:text-xl pb-2.5 lg:pb-5 text-slate-300">
+            Hi, I'm
+          </p>
           <p className="xl:text-6xl sm:text-5xl text-3xl pb-2 sm:pb-3 text-white leading-tight font-bold tracking-tight">
             Karan Singh
           </p>
@@ -75,22 +77,25 @@ hover:text-blue-400"
               whileTap={{
                 scale: 0.97,
               }}
-              className="border py-2 px-4 sm:py-3 sm:px-6 rounded-xl border-transparent  bg-blue-400 text-white "
+              className="border py-2 px-4 sm:py-3 sm:px-6 rounded-xl border-transparent  bg-blue-400 text-white cursor-pointer "
             >
               Projects
             </motion.button>
-            <motion.button
-              whileHover={{
-                scale: 1.03,
-                backgroundColor:"#42A5F5"
-              }}
-              whileTap={{
-                scale: 0.97,
-              }}
-              className="border-white py-2 px-4 sm:py-3 sm:px-6 rounded-xl bg-transparent text-white border "
-            >
-              Download CV
-            </motion.button>
+            <a href="/Resume.pdf" download className="cursor-pointer">
+              {" "}
+              <motion.button
+                whileHover={{
+                  scale: 1.03,
+                  backgroundColor: "#42A5F5",
+                }}
+                whileTap={{
+                  scale: 0.97,
+                }}
+                className="border-white py-2 px-4 sm:py-3 sm:px-6 rounded-xl bg-transparent text-white border cursor-pointer "
+              >
+                Download CV
+              </motion.button>
+            </a>
           </div>
           <div className="SocialIconContainer  flex gap-10 py-4 lg:py-0 ">
             <img
